@@ -1,1 +1,109 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,700');
+
+body {
+    background:#2cdee4;
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', 'Arial';
+    color:#fff;
+}
+h1  {
+    margin: 17px 20px;
+}
+#mainMenu {
+    background-color: #555;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+#mainMenu li {
+    float: left;
+}
+#mainMenu li a{
+    text-align: center;
+    padding: 14px 16px;
+}
+.midContainer {
+    height: 500px;
+}
+
+.dataWindow {
+    background-color: #555;
+    height: 100%;
+    overflow: auto;
+    margin-left: 140px;
+}
+.dataWindow li {
+    display: inline;
+    margin-right: 10px;
+}
+.dataWindow ul {
+    margin: 10px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color: #2cdee4;
+}
+.active {
+    background-color: #4CAF50;
+}
+
+.statusWindow {
+    position: absolute;
+    float: left;
+    width: 138px;
+    height: 500px;
+
+    overflow: hidden;
+    background-color: #555;
+}
+.statusWindow:hover{
+    width: 960px;
+    border-right: 5px dotted #2cdee4;
+}
+.statusWindow:hover .stationList{
+    visibility: visible;
+}
+.statusOptions{
+    padding: 7px 7px ;
+    width: 118px;
+    float: left;
+    height: 100%;
+    border-right: 5px dotted #2cdee4;
+}
+.stationList {
+    float: left;
+
+    visibility: hidden;
+    display: grid;
+    grid-template-columns: repeat(6, 120px);
+}
+
+.statusWindow li a{
+    padding: 8px 16px;
+}
+
+h4 {
+    margin: 0;
+    padding: 0;
+}
+#footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 4px;
+    margin: 0;
+    background-color: #2cdee4;
+}
